@@ -252,67 +252,7 @@ const Index = () => {
                     required
                   />
                 </>}
-/*                {registrationFields.includes('contact') && <>
-                  <Text
-                    pt="0.5rem"
-                    pb="0.5rem"
-                    textStyle="subtitle1"
-                  >
-                    {t('mobile-number')}
-                  </Text>
-                  <Input
-                    layerStyle="formInput"
-                    type="tel"
-                    name="contact"
-                    pattern="^(8|9)(\d{7})$"
-                    maxLength="8"
-                    minLength="8"
-                    required
-                    title="Mobile number should be an 8 digit Singapore number i.e. 8xxxxxxx"
-                  />
-                </>}
-                {registrationFields.includes('postalcode') && <>
-                  <Text
-                    pt="0.5rem"
-                    pb="0.5rem"
-                    textStyle="subtitle1"
-                  >
-                    {t('postal-code')}
-                  </Text>
-                  <Input
-                    layerStyle="formInput"
-                    type="tel"
-                    name="postalcode"
-                    pattern="^(\d{6})$"
-                    maxLength="6"
-                    minLength="6"
-                    placeholder="123456"
-                    required
-                    title="Postal code should be an 6 digit number"
-                  />
-                </>}
 
-                {registrationFields.includes('nric') && <>
-                  <Text
-                    pt="0.5rem"
-                    pb="0.5rem"
-                    textStyle="subtitle1"
-                  >
-                    NRIC
-                  </Text>
-                  <Input
-                    layerStyle="formInput"
-                    isInvalid={invalidNRIC && "error.500"}
-                    onChange={() => setInvalidNRIC(false)}
-                    name="nric"
-                    maxLength="9"
-                    minLength="9"
-                    placeholder="SxxxxxxxA"
-                    required
-                  />
-                  {invalidNRIC && <Text color="error.500" mt="-10px"> {t('invalid')} NRIC</Text>}
-                </>}
-*/
                 {Array.isArray(categories) && categories.length > 0 && <>
                   <Text
                     pt="0.5rem"
