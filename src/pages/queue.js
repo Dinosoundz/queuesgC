@@ -252,7 +252,7 @@ const Index = () => {
                     required
                   />
                 </>}
-                {registrationFields.includes('contact') && <>
+/*                {registrationFields.includes('contact') && <>
                   <Text
                     pt="0.5rem"
                     pb="0.5rem"
@@ -312,7 +312,7 @@ const Index = () => {
                   />
                   {invalidNRIC && <Text color="error.500" mt="-10px"> {t('invalid')} NRIC</Text>}
                 </>}
-
+*/
                 {Array.isArray(categories) && categories.length > 0 && <>
                   <Text
                     pt="0.5rem"
